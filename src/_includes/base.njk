@@ -19,20 +19,26 @@
     </head>
 
     <body class="w3-black">
-        <div class="w3-content w3-padding w3-metro-darken">
-            <header>
-                <h1 class="w3-center"><b><a href="/" class="w3-button">Softwayr</a></b></h1>
-            </header>
+        <nav class="w3-metro-darken">
+            <div class="w3-content w3-bar">
+                <a href="/" class="w3-bar-item w3-button">Home</a>
+            </div>
+        </nav>
 
-            <hr>
+        <header class="w3-white">
+            <div class="w3-content w3-padding-16">
+                <h1><b><a href="/" class="w3-button">Softwayr</a></b></h1>
+            </div>
+        </header>
 
+        <main>
             {{ content | safe }}
+        </main>
 
-            <hr>
-
-            <footer>
+        <footer>
+            <div class="w3-content w3-padding">
                 <p class="w3-center w3-small">Copyright &copy; <a href="https://davidhunter.scot" target="_blank">David Hunter</a>.</p>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </body>
 </html>
