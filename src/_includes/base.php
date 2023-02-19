@@ -6,9 +6,9 @@
 
         <title><?php if( isset( $page_title ) && $page_title ) echo $page_title . " - "; ?>Softwayr</title>
 
-        <link rel="stylesheet" type="text/css" href="https://w3css.staticly.cc/4.15/w3.css">
-        <link rel="stylesheet" type="text/css" href="https://w3css.staticly.cc/w3-colors-metro.css">
-        <link rel="stylesheet" type="text/css" href="https://webfonts.staticly.cc/poppins/poppins.css">
+        <link rel="stylesheet" type="text/css" href="/assets/w3css/4.15/w3.css">
+        <link rel="stylesheet" type="text/css" href="/assets/w3css/w3-colors-metro.css">
+        <link rel="stylesheet" type="text/css" href="/assets/webfonts/poppins/poppins.css">
 
         <style>
             h1, h2, h3, h4, h5, h6, p
