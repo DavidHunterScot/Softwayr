@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>{% if title %}{{ title }} - {% endif %}Softwayr</title>
+        <title><?php if( isset( $page_title ) && $page_title ) echo $page_title . " - "; ?>Softwayr</title>
 
         <link rel="stylesheet" type="text/css" href="https://w3css.staticly.cc/4.15/w3.css">
         <link rel="stylesheet" type="text/css" href="https://w3css.staticly.cc/w3-colors-metro.css">
@@ -32,7 +32,7 @@
         </header>
 
         <main>
-            {{ content | safe }}
+            <?php if( isset( $page_content ) && is_callable( $page_content ) ) $page_content(); ?>
         </main>
 
         <footer>
