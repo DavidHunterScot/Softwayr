@@ -1,6 +1,8 @@
----
-layout: "base.njk"
----
+<?php
+
+$page_content = function()
+{
+?>
 
 <div class="w3-metro-dark-blue w3-padding-32">
     <div class="w3-content w3-padding">
@@ -14,3 +16,8 @@ layout: "base.njk"
         <p>Website currently under heavy development! Things may break or change significantly during this time. Please keep checking back to follow its development and to see what is available.</p>
     </div>
 </div>
+
+<?php
+};
+
+include __DIR__ . DIRECTORY_SEPARATOR . "_includes" . DIRECTORY_SEPARATOR . "base.php";
