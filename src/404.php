@@ -1,11 +1,8 @@
-<?php
-
-$page_title = "Not Found (404)";
-$friendly_urls = false;
-
-$page_content = function()
-{
-?>
+---
+page_title: Not Found (404)
+friendly_urls: false
+layout: src/_includes/base.php
+---
 
 <div class="w3-dark-gray w3-padding-32">
     <div class="w3-content w3-padding">
@@ -23,8 +20,3 @@ $page_content = function()
         </ul>
     </div>
 </div>
-
-<?php
-};
-
-include __DIR__ . DIRECTORY_SEPARATOR . "_includes" . DIRECTORY_SEPARATOR . "base.php";
