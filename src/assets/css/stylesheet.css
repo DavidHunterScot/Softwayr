@@ -1,0 +1,258 @@
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+
+:root
+{
+    --color-accent: #986bc0;
+    --color-accent: #9066d8;
+}
+
+html,
+body
+{
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    color: var( --color-accent );
+}
+
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.banner
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient( rgba( 0, 0, 0, 0.75 ), rgba( 0, 0, 0, 0.75 ) ), url( '/assets/images/banner-background-2.png' );
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h1
+{
+    margin: 0;
+    padding: 0;
+}
+
+.banner .logo
+{
+    width: 120px;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.banner .navbar
+{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.banner nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.banner .navbar a
+{
+    text-decoration: none;
+    position: relative;
+}
+
+.banner .navbar a::after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var( --color-accent );
+    width: 0;
+    height: 2px;
+    transition: 0.5s;
+}
+
+.banner .navbar a:hover::after
+{
+    width: 100%;
+}
+
+.banner a
+{
+    color: #fff;
+}
+
+.banner .content
+{
+    width: 100%;
+    position: relative;
+    top: 30%;
+    transform: translateY( -50% );
+    text-align: center;
+    color: #fff;
+}
+
+.banner .content h2
+{
+    font-size: 3rem;
+    margin-top: 80px;
+}
+
+.banner .content p
+{
+    margin: 20px;
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.banner .buttons .button
+{
+    padding: 15px 35px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid var( --color-accent );
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .buttons .button span
+{
+    background-color: var( --color-accent );
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner .buttons .button:hover span
+{
+    width: 100%;
+}
+
+.banner .buttons .button:hover
+{
+    border: none;
+}
+
+section.about,
+section.projects,
+section.contact
+{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+section.about h2,
+section.projects h2,
+section.contact h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+section.projects .projects
+{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+section.projects .projects .project
+{
+    width: 100%;
+    border: 1px solid #888;
+    padding: 1rem;
+}
+
+.contact .email-address
+{
+    font-size: 1.5rem;
+}
+
+footer
+{
+    background-color: #111;
+    color: #ddd;
+    text-align: center;
+}
+
+footer a
+{
+    color: #fff;
+}
+
+.not_found_404 h1 a
+{
+    text-decoration: none;
+}
+
+@media ( min-width: 800px )
+{
+    .banner .navbar
+    {
+        flex-direction: row;
+    }
+
+    .banner .buttons .button
+    {
+        display: inline-block;
+    }
+
+    .banner .content h2
+    {
+        font-size: 4rem;
+    }
+
+    .banner .content p
+    {
+        font-size: 2rem;
+    }
+
+    section.projects .projects
+    {
+        flex-direction: row;
+    }
+
+    section.projects .projects .project
+    {
+        width: calc( 25% - 0.8rem );
+    }
+}
