@@ -52,7 +52,7 @@
                     <div class="project">
                         <h3>StaticPHP</h3>
                         <p>Fast and Simple Static Site Generator</p>
-                        <p><a href="https://staticphp.softwayr.io" target="_blank">Visit Site</a></p>
+                        <p><a href="https://staticphp.softwayr.net" target="_blank">Visit Site</a></p>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
 
         <footer>
             <div class="container">
-                <p>Copyright &copy; <a href="https://david-hunter.net" target="_blank">David Hunter</a>. Powered by <a href="https://staticphp.softwayr.io" target="_blank">StaticPHP</a>.</p>
+                <p>Copyright &copy; <a href="https://david-hunter.net" target="_blank">David Hunter</a>. Powered by <a href="https://staticphp.softwayr.net" target="_blank">StaticPHP</a>.</p>
             </div>
         </footer>
 
